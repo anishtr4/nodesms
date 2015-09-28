@@ -1,0 +1,6 @@
+// These code snippets use an open-source library. http://unirest.io/nodejs
+unirest.get("https://webaroo-send-message-v1.p.mashape.com/sendMessage?message=<required>&phone=<required>")
+.header("X-Mashape-Key", "a32f3prMbpmshDCfXnsSUSoSrLTlp1MSmyxjsntqX6fJ9wuF2x")
+.end(function (result) {
+  console.log(result.status, result.headers, result.body);
+});
